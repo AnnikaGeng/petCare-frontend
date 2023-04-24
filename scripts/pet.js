@@ -1,7 +1,6 @@
 
-(() => {
-    "use strict"; 
 
+$(document).ready(function() {
     const allPetUrl =  `${window.BASE_URL}/pet`;
 
     const tbody = document.querySelector('#tbody');
@@ -113,5 +112,4 @@
 
     getData();
     
-
-})();
+  });

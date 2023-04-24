@@ -4,7 +4,15 @@ $(document).ready(function(){
 
     // Get all customers
     const getData = async () => {
-        const response = await fetch(customerURL);
+        const controller = new AbortController();
+        const timeout = setTimeout(() => {
+            controller.abort();
+        }, 30000); // 30 seconds timeout
+
+        try {
+        const response = await fetch(customerURL, {
+            signal: controller.signal
+        });
         const data = await response.json();
         data.forEach(customer => {
             const tr = document.createElement('tr');
@@ -59,6 +67,11 @@ $(document).ready(function(){
             tr.appendChild(action);
             tbody.appendChild(tr);
         });
+        } catch (error) {
+            console.log(error);
+        } finally {
+            clearTimeout(timeout);
+        }
     }
     getData();
 
