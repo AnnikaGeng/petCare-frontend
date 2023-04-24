@@ -1,0 +1,12 @@
+.petTable {
+    table-layout: fixed;
+    width: 100%;
+}
+
+.petTable td {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    width: 14%;
+}
+

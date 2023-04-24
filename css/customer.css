@@ -1,0 +1,12 @@
+.customerTable {
+    table-layout: fixed;
+    width: 100%;
+}
+
+.customerTable td {
+    width: 16.5%;
+}
+
+/* .fa-triangle-exclamation {
+    color: #ff0000;
+} */

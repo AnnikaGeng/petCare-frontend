@@ -1,0 +1,12 @@
+.scheduleTable {
+    table-layout: fixed;
+    width: 100%;
+}
+
+.scheduleTable td {
+    width: 16.5%;
+}
+
+label {
+    font-weight: bold;
+}

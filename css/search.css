@@ -1,0 +1,32 @@
+.section {
+    display: none;
+}
+
+.active {
+    display: block;
+}
+
+.search {
+    padding-top: 30px;
+    display: flex;
+    flex-direction: column;
+}
+
+.search form {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    width: 50%;
+}
+
+.search form input {
+    margin-right: 10px;
+    
+}
+
+.searchTable {
+    table-layout: fixed;
+    width: 100%;
+    margin-top: 30px;
+    display: none;
+}
