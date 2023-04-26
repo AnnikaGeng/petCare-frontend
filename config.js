@@ -1,4 +1,4 @@
-window.BASE_URL = 'http://springbootcrudpetcare-env.eba-rjzgqkk2.us-east-1.elasticbeanstalk.com';
+window.BASE_URL = 'https://www.yidesign.click/';
 
 $.ajaxSetup({
     timeout: 60000 // in milliseconds
